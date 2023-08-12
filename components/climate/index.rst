@@ -33,6 +33,13 @@ All climate platforms in ESPHome inherit from the climate configuration schema. 
 
 Configuration variables:
 
+- **name** (**Required**, string): The name of the climate device.
+
+  .. note::
+
+      If you have a :ref:`friendly_name <esphome-configuration_variables>` set for your device and
+      you want the climate to use that name, you can set ``name: None``.
+
 - **icon** (*Optional*, icon): Manually set the icon to use for the climate device in the frontend.
 - **visual** (*Optional*): Visual settings for the climate device - these do not
   affect operation and are solely for controlling how the climate device shows up in the
@@ -45,8 +52,8 @@ Configuration variables:
   - **temperature_step** (*Optional*, float): The granularity with which the target temperature
     can be controlled. Can be a single number, or split as below:
 
-    - **target_temperature** (**Required**, float)
-    - **current_temperature** (**Required**, float)
+    - **target_temperature** (**Required**, float): The granularity for target temperature
+    - **current_temperature** (**Required**, float): The granularity for current temperature
 
 Advanced options:
 
@@ -210,6 +217,7 @@ advanced stuff.
 
 This trigger is activated each time the state of the climate device is updated
 (for example, if the current temperature measurement or the mode set by the users changes).
+The ``Climate`` itself is available to automations as the reference ``x``.
 
 .. code-block:: yaml
 
@@ -217,7 +225,11 @@ This trigger is activated each time the state of the climate device is updated
       - platform: midea  # or any other platform
         # ...
         on_state:
-        - logger.log: "State updated!"
+          - logger.log: "State updated!"
+          - lambda: |-
+              if (x.mode != CLIMATE_MODE_OFF)
+                id(some_binary_sensor).publish_state(true);
+
 
 .. _climate-on_control_trigger:
 
@@ -228,15 +240,22 @@ This trigger is activated each time a *control* input of the climate device
 is updated via a ``ClimateCall`` (which includes changes coming in from Home
 Assistant).  That is, this trigger is activated for, for example, changes to
 the mode, *but not* on temperature measurements.  It will be invoked prior to
-the ``on_state`` trigger, if both are defined.
+the ``on_state`` trigger, if both are defined. The ``ClimateCall`` control
+object is available to automations as the reference ``x`` that can be changed.
 
 .. code-block:: yaml
 
     climate:
-      - platform: midea  # or any other platform
+      - platform: ...
         # ...
         on_control:
-        - logger.log: "Control input received; configuration updated!"
+          - logger.log: "Control input received; configuration updated!"
+          - lambda: |-
+              if (x.get_mode() != CLIMATE_MODE_OFF) {
+                  id(turnoff_script).stop();
+                  x.set_target_temperature(25.0f);
+              }
+
 
 See Also
 --------
