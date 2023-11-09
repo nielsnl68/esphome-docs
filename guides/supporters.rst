@@ -601,6 +601,7 @@ Contributors
 - `jakehdk (@jakehdk) <https://github.com/jakehdk>`__
 - `Jake Shirley (@JakeShirley) <https://github.com/JakeShirley>`__
 - `Jakob Reiter (@jakommo) <https://github.com/jakommo>`__
+- `jakub-medrzak (@jakub-medrzak) <https://github.com/jakub-medrzak>`__
 - `James Braid (@jamesbraid) <https://github.com/jamesbraid>`__
 - `James Duke (@jamesduke) <https://github.com/jamesduke>`__
 - `James Gao (@jamesgao) <https://github.com/jamesgao>`__
@@ -738,7 +739,6 @@ Contributors
 - `Leonardo La Rocca (@leoli51) <https://github.com/leoli51>`__
 - `leoshusar (@leoshusar) <https://github.com/leoshusar>`__
 - `Leo Winter (@LeoWinterDE) <https://github.com/LeoWinterDE>`__
-- `Leon Loopik (@Lewn) <https://github.com/Lewn>`__
 - `Lubos Horacek (@lhoracek) <https://github.com/lhoracek>`__
 - `Juraj Liso (@LiJu09) <https://github.com/LiJu09>`__
 - `lillborje71 (@lillborje71) <https://github.com/lillborje71>`__
@@ -1117,6 +1117,7 @@ Contributors
 - `Hawawa McTaru (@TaruDesigns) <https://github.com/TaruDesigns>`__
 - `Ryan Hoffman (@tekmaven) <https://github.com/tekmaven>`__
 - `testbughub (@testbughub) <https://github.com/testbughub>`__
+- `Tudor Sandu (@tetele) <https://github.com/tetele>`__
 - `Greg Lincoln (@tetious) <https://github.com/tetious>`__
 - `Terry Hardie (@thardie) <https://github.com/thardie>`__
 - `Michael Jahn (@thatSecOpsGuy) <https://github.com/thatSecOpsGuy>`__
@@ -1250,4 +1251,4 @@ Contributors
 - `Zsolt Zsiros (@ZsZs73) <https://github.com/ZsZs73>`__
 - `Christian Zufferey (@zuzu59) <https://github.com/zuzu59>`__
 
-*This page was last updated October 30, 2023.*
+*This page was last updated November 3, 2023.*

@@ -342,6 +342,7 @@ Environmental
     TMP117, components/sensor/tmp117, tmp117.jpg, Temperature
     TMP1075, components/sensor/tmp1075, tmp1075.jpg, Temperature
     HYT271, components/sensor/hyt271, hyt271.jpg, Temperature & Humidity
+    XGZP68xx Series, components/sensor/xgzp68xx, 6897d.jpg, Differential Pressure
 
 
 Light
@@ -397,6 +398,7 @@ Miscellaneous
     Person Sensor (SEN21231), components/sensor/sen21231, sen21231.png
     Kuntze pool sensor, components/sensor/kuntze, kuntze.jpg
     WireGuard, components/wireguard, wireguard_custom_logo.svg
+    MicroNova pellet stove, components/micronova, pellet.svg
 
 
 Motion
@@ -406,6 +408,7 @@ Motion
     APDS9960, components/sensor/apds9960, apds9960.jpg, Colour & Gesture
     BMI160, components/sensor/bmi160, bmi160.jpg, Accelerometer & Gyroscope
     LD2410, components/sensor/ld2410, ld2410.jpg, Motion & Presence
+    LD2420, components/sensor/ld2420, ld2420.jpg, Motion & Presence
     MPU6050, components/sensor/mpu6050, mpu6050.jpg, Accelerometer & Gyroscope
     MPU6886, components/sensor/mpu6886, mpu6886.jpg, Accelerometer & Gyroscope
     RuuviTag, components/sensor/ruuvitag, ruuvitag.jpg, Temperature & Humidity & Accelerometer
@@ -494,6 +497,8 @@ Presence Detection
 .. imgtable::
 
     DFRobot mmWave Radar, components/dfrobot_sen0395, dfrobot_sen0395.jpg
+    LD2410, components/sensor/ld2410, ld2410.jpg
+    LD2420, components/sensor/ld2420, ld2420.jpg
 
 Miscellaneous
 *************
@@ -502,7 +507,6 @@ Miscellaneous
     Analog Threshold, components/binary_sensor/analog_threshold, analog_threshold.svg, dark-invert
     ESP32 BLE Presence, components/binary_sensor/ble_presence, bluetooth.svg, dark-invert
     Hydreon Rain Sensor Binary Sensor, components/binary_sensor/hydreon_rgxx, hydreon_rg9.jpg
-    LD2410, components/sensor/ld2410, ld2410.jpg
     Modbus Binary Sensor, components/binary_sensor/modbus_controller, modbus.png
     PipSolar - compatible PV Inverter, components/pipsolar, pipsolar.jpg
     Qwiic PIR Motion, components/binary_sensor/qwiic_pir, qwiic_pir.jpg
